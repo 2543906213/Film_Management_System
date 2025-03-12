@@ -1,0 +1,18 @@
+/* 设置 body 元素的外边距为 0 */
+body {
+  margin: 0;
+  /* 设置字体系列，优先使用系统字体 */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  /* 启用抗锯齿效果，使字体更平滑 */
+  -webkit-font-smoothing: antialiased;
+  /* 启用抗锯齿效果，使字体更平滑（针对 Firefox） */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 设置 code 元素的字体系列，优先使用等宽字体 */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

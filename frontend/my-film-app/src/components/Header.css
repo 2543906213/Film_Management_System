@@ -1,0 +1,81 @@
+.header {
+  /* 将元素固定在页面的特定位置，即使页面滚动也不会移动 */
+  position: fixed;
+  /* 将元素固定在页面顶部 */
+  top: 0;
+  /* 将元素固定在页面左侧 */
+  left: 0;
+  /* 将元素固定在页面右侧，确保元素宽度占满整个页面宽度 */
+  right: 0;
+  /* 设置元素的背景颜色为白色 */
+  background-color: #fff;
+  /* 在元素底部添加一个1像素宽的浅灰色实线边框 */
+  border-bottom: 1px solid #ddd;
+  /* 设置元素的堆叠顺序，使其位于其他元素之上 */
+  z-index: 1000;
+  /* 设置元素的内边距，上下各10像素，左右各20像素 */
+  padding: 10px 20px;
+}
+
+.header-container {
+  /* 将元素设置为弹性盒布局 */
+  display: flex;
+  /* 在主轴（水平轴）上将子元素均匀分布在两端 */
+  justify-content: space-between;
+  /* 在交叉轴（垂直轴）上将子元素居中对齐 */
+  align-items: center;
+}
+
+.header-left .home-link {
+  /* 设置字体大小为24像素 */
+  font-size: 24px;
+  /* 设置字体粗细为粗体 */
+  font-weight: bold;
+  /* 去掉文本的下划线装饰 */
+  text-decoration: none;
+  /* 设置文本颜色为深灰色 */
+  color: #333;
+}
+
+.header-right {
+  /* 将元素设置为弹性盒布局 */
+  display: flex;
+  /* 在交叉轴（垂直轴）上将子元素居中对齐 */
+  align-items: center;
+}
+
+.header-button {
+  /* 去掉按钮的背景颜色 */
+  background: none;
+  /* 去掉按钮的边框 */
+  border: none;
+  /* 将鼠标悬停在按钮上时的光标样式设置为指针 */
+  cursor: pointer;
+  /* 设置左边距为15像素 */
+  margin-left: 15px;
+  /* 设置字体大小为16像素 */
+  font-size: 16px;
+  /* 将元素设置为弹性盒布局 */
+  display: flex;
+  /* 在交叉轴（垂直轴）上将子元素居中对齐 */
+  align-items: center;
+}
+
+.header-button .icon {
+  /* 设置右边距为5像素 */
+  margin-right: 5px;
+  /* 设置字体大小为18像素 */
+  font-size: 18px;
+}
+
+.search-form {
+  /* 设置左边距为10像素 */
+  margin-left: 10px;
+}
+
+.search-input {
+  /* 设置内边距为5像素 */
+  padding: 5px;
+  /* 设置字体大小为16像素 */
+  font-size: 16px;
+}

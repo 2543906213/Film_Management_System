@@ -1,0 +1,204 @@
+/* 画廊容器的外边距 */
+.gallery-container {
+    /* 设置外边距为20px */
+    margin: 20px;
+    /* 设置背景颜色为透明 */
+    background-color: transparent;
+    /* 设置圆角半径为8px */
+    border-radius: 8px;
+    /* 设置内边距为5px */
+    padding: 0px;
+}
+
+/* 画廊标题的外边距底部 */
+.gallery-header {
+    /* 设置底部外边距为20px */
+    margin-bottom: 20px;
+}
+
+/* 画廊标签过滤器的显示样式 */
+.gallery-tag-filter {
+    /* 设置为弹性盒子布局 */
+    display: flex;
+    /* 允许换行 */
+    flex-wrap: wrap;
+    /* 设置子元素之间的间距为5px */
+    gap: 5px;
+}
+
+/* 画廊标签过滤器按钮的样式 */
+.gallery-tag-filter button {
+    /* 设置内边距为5px 10px */
+    padding: 5px 10px;
+    /* 设置边框为1px实线，颜色为#ccc */
+    border: 1px solid #ccc;
+    /* 设置圆角半径为4px */
+    border-radius: 4px;
+    /* 设置背景颜色为白色 */
+    background-color: #fff;
+    /* 设置鼠标悬停时的光标样式为指针 */
+    cursor: pointer;
+    /* 设置字体大小 */
+    font-size: 15px;
+}
+
+/* 选中状态下的按钮样式 */
+.gallery-tag-filter button.selected {
+    /* 设置背景颜色为#e0e0e0 */
+    background-color: #e0e0e0;
+    /* 设置边框颜色为#999 */
+    border-color: #999;
+}
+
+/* 画廊网格的显示样式 */
+.gallery-grid {
+    /* 设置为网格布局 */
+    display: grid;
+    /* 设置每行三列 */
+    grid-template-columns: repeat(3, 1fr);
+    /* 设置子元素之间的间距 */
+    gap: 15px;
+    /* 设置顶部外边距 */
+    margin-top: 15px;
+}
+
+/* 画廊卡片的样式 */
+.gallery-card {
+    /* 设置圆角半径为8px */
+    border-radius: 8px;
+    /* 设置阴影效果 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* 设置溢出隐藏 */
+    overflow: hidden;
+    /* 设置背景颜色为白色 */
+    background-color: #fff;
+    /* 设置宽度为100% */
+    width: 100%;
+}
+
+/* 画廊卡片图片的样式 */
+.gallery-card-image {
+    /* 设置宽度为100% */
+    width: 100%;
+    /* 设置高度为300px */
+    height: 200px;
+    /* 设置图片适应方式为contain */
+    object-fit: contain;
+}
+
+/* 画廊卡片占位符的样式 */
+.gallery-card-placeholder {
+    /* 设置宽度为100% */
+    width: 100%;
+    /* 设置高度为300px */
+    height: 300px;
+    /* 设置为弹性盒子布局 */
+    display: flex;
+    /* 设置子元素垂直居中 */
+    align-items: center;
+    /* 设置子元素水平居中 */
+    justify-content: center;
+    /* 设置背景颜色为#f5f5f5 */
+    background-color: #f5f5f5;
+    /* 设置字体颜色为#666 */
+    color: #666;
+    /* 设置字体大小为16px */
+    font-size: 16px;
+    /* 设置文本居中 */
+    text-align: center;
+    /* 设置内边距为20px */
+    padding: 20px;
+}
+
+/* 画廊卡片内容的样式 */
+.gallery-card-content {
+    /* 设置内边距为8px */
+    padding: 8px;
+}
+
+/* 画廊卡片内容标题的样式 */
+.gallery-card-content h3 {
+    /* 设置外边距为上边距、右边距、下边距、左边距：0 0 5px 0 */
+    margin: auto;
+    /* 设置字体大小为18px */
+    font-size: 18px;
+    /* 设置字体颜色为#333 */
+    color: #333;
+}
+
+/* 画廊卡片内容段落的样式 */
+.gallery-card-content p {
+    /* 设置外边距为0 0 5px 0 */
+    margin: auto;
+    /* 设置字体大小为12px */
+    font-size: 13px;
+    /* 设置字体颜色为#666 */
+    color: #666;
+}
+
+/* 画廊标签的样式 */
+.gallery-tag {
+    /* 设置为内联弹性盒子布局 */
+    display: inline-flex;
+    /* 设置子元素垂直居中 */
+    align-items: center;
+    /* 设置字体大小为12px */
+    font-size: 13px;
+    /* 设置字体颜色为#007bff */
+    color: #515151;
+    /* 设置右外边距为5px */
+    margin-right: 10px;
+}
+
+/* 画廊标签圆点的样式 */
+.gallery-tag-dot {
+    /* 设置为内联弹性盒子布局 */
+    display: inline-flex;
+    /* 设置宽度为8px */
+    width: 8px;
+    /* 设置高度为8px */
+    height: 8px;
+    /* 设置背景颜色为#007bff */
+    background-color: #515151;
+    /* 设置圆角半径为50% */
+    border-radius: 50%;
+    /* 设置右外边距为5px */
+    margin-right: 3px;
+    /* 设置和文字的中间对齐根据需要调整 */
+    margin-top: 2px;
+}
+
+/* 响应式设计：最大宽度为1024px时的样式 */
+@media (max-width: 1024px) {
+    .gallery-grid {
+        /* 设置每行两列 */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 响应式设计：最大宽度为768px时的样式 */
+@media (max-width: 768px) {
+    .gallery-container {
+        /* 设置外边距为10px */
+        margin: 10px;
+        /* 设置内边距为10px */
+        padding: 10px;
+    }
+
+    .gallery-grid {
+        /* 设置每行一列 */
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-tag-filter {
+        /* 设置为纵向排列 */
+        flex-direction: column;
+    }
+
+    .gallery-tag-filter button {
+        /* 设置宽度为100% */
+        width: 100%;
+        /* 设置底部外边距为5px */
+        margin-bottom: 5px;
+    }
+}

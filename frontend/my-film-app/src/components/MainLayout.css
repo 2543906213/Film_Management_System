@@ -1,0 +1,61 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    /* 左侧占1份，右侧占3份 */
+    gap: 20px;
+    /* 列之间的间距 */
+    height: 100vh;
+    /* 占满整个视口高度 */
+    padding: 20px;
+    /* 内边距，可选 */
+    border-radius: 10px;
+    /* 添加圆角，值可调整 */
+    margin: 0 60px;
+    /* 左右外边距 */
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    /* 垂直排列上下两块 */
+    gap: 20px;
+    /* 上下块之间的间距 */
+    border-radius: 10px;
+    /* 添加圆角，值可调整 */
+}
+
+.left-top {
+    /* 上部的方框大小根据内容自动调整 */
+    background-color: #f0f0f0;
+    /* 浅灰色背景，便于区分 */
+    align-items: center;
+    /* 内容垂直居中 */
+    justify-content: center;
+    /* 内容水平居中 */
+    border-radius: 10px;
+    /* 添加圆角，值可调整 */
+}
+
+.left-bottom {
+    flex: 1;
+    /* 下面占一份，自动根据右边的内容调整长度 */
+    background-color: #f0f0f0;
+    /* 浅灰色背景，便于区分 */
+    align-items: center;
+    /* 内容垂直居中 */
+    justify-content: center;
+    /* 内容水平居中 */
+    border-radius: 10px;
+    /* 添加圆角，值可调整 */
+}
+
+.right-column {
+    background-color: #e0e0e0;
+    /* 稍深的灰色背景 */
+    align-items: center;
+    /* 内容垂直居中 */
+    justify-content: center;
+    /* 内容水平居中 */
+    border-radius: 10px;
+    /* 添加圆角，值可调整 */
+}

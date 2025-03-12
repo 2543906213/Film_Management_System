@@ -1,0 +1,21 @@
+/* 设置左侧栏的弹性比例为 1，使其占据剩余空间 */
+.navigation-container {
+    padding: 20px;
+    border-radius: 10px;
+    /* 添加圆角，值可调整 */
+}
+
+.navigation-header {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-header-icon {
+    font-size: 20px;
+}
+
+.navigation-header-text {
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}

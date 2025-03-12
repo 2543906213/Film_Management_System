@@ -1,0 +1,40 @@
+/* 定义个人资料容器的样式 */
+.pagetitle-container {
+    /* 设置容器的定位方式为相对定位 */
+    position: relative;
+    /* 设置文本对齐方式为居中 */
+    text-align: center;
+    /* 设置容器的上边距为-75px */
+    margin-top: -75px;
+    /* 调整此值以控制头像与背景图的重叠程度 */
+}
+
+/* 定义个人头像的样式 */
+.pagetitle-avatar {
+    /* 设置头像的宽度为150px */
+    width: 150px;
+    /* 设置头像的高度为150px */
+    height: 150px;
+    /* 设置头像的圆角半径为50%，使其成为圆形；如果需要方形头像，将此行删除 */
+    border-radius: 50%;
+    /* 设置头像的边框为3px实线，颜色为白色 */
+    border: 3px solid #fff;
+    /* 设置头像的背景颜色为白色 */
+    background: #fff;
+    /* 设置头像的对象适应方式为cover */
+    object-fit: cover;
+}
+
+/* 定义个人资料标题的样式 */
+.pagetitle-title {
+    /* 设置标题的上边距为10px ，调整标题与头像之间的距离*/
+    margin-top: 10px;
+    /* 设置标题的字体族 */
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* 设置标题的字体大小为36px */
+    font-size: 36px;
+    /* 设置标题的字体颜色为#333 */
+    color: #333;
+    /* 设置标题的字体加粗 */
+    font-weight: bold;
+}

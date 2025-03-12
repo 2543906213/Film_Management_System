@@ -1,0 +1,70 @@
+/* 确保 hero-title 的 z-index 较高 */
+.hero-title {
+  /* 绝对定位 */
+  position: absolute;
+  /* 水平居中 */
+  left: 50%;
+  /* 向下偏移 40 像素 */
+  bottom: -40px;
+  /* 水平居中对齐 */
+  transform: translateX(-50%);
+  /* 字体系列 */
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* 字体大小 */
+  font-size: 36px;
+  /* 字体颜色 */
+  color: #333;
+  /* 字体加粗 */
+  font-weight: bold;
+  /* 设置较高的 z-index */
+  z-index: 2;
+
+}
+
+/* 确保 intro-section 的 z-index 较低 */
+.intro-section {
+  /* 文本居中 */
+  text-align: center;
+  /* 内边距 */
+  padding: 40px 20px;
+  /* 背景颜色 */
+  /* background: #f5f5f5; */
+  /* 相对定位 */
+  position: relative;
+  /* 设置较低的 z-index */
+  z-index: 1;
+  /* 添加圆角，值可调整 */
+  border-radius: 10px;
+  /* 左右外边距 */
+  margin: 0 80px;
+}
+
+.intro-text {
+  /* 字体大小 */
+  font-size: 25px;
+  /* 字体颜色 */
+  color: #000000;
+  /* 初始透明度 */
+  opacity: 0;
+  /* 动画效果 */
+  animation: fadeInUp 1.5s forwards;
+  /* 动画延迟 */
+  animation-delay: 0.5s;
+}
+
+/* 定义淡入上移的动画 */
+@keyframes fadeInUp {
+  0% {
+    /* 初始透明度 */
+    opacity: 0;
+    /* 初始位置向下偏移 30 像素 */
+    transform: translateY(30px);
+  }
+
+  100% {
+    /* 最终透明度 */
+    opacity: 1;
+    /* 最终位置 */
+    transform: translateY(0);
+  }
+}

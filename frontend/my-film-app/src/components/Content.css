@@ -1,0 +1,23 @@
+.content-container {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    /* 添加圆角，值可调整 */
+}
+
+.content-header {
+    display: flex;
+    align-items: center;
+}
+
+.content-header-icon {
+    /* 图标大小 */
+    font-size: 20px;
+}
+
+
+.content-header-text {
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}

@@ -1,0 +1,49 @@
+.about-me-container {
+    /* background-color: transparent; */
+    padding: 20px;
+    border-radius: 10px;
+    /* 添加圆角，值可调整 */
+}
+
+.about-me-header {
+    display: flex;
+    align-items: center;
+}
+
+.about-me-header-icon {
+    font-size: 20px;
+}
+
+.about-me-header-text {
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.about-me-list {
+    position: center;
+    font-size: 18px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.about-me-list::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: #000000;
+}
+
+.about-me-list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.about-me-list-icon {
+    margin-right: 10px;
+}

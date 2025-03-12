@@ -1,0 +1,10 @@
+/* 设置 body 元素的外边距为 0 */
+body {
+  margin: 0;
+  /* 设置字体为 Arial，如果不可用则使用 sans-serif */
+  font-family: Arial, sans-serif;
+  /* 设置背景颜色为浅灰色 */
+  background: #f8f8f8;
+  /* 设置文本颜色为深灰色 */
+  color: #333;
+}

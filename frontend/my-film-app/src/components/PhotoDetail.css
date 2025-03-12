@@ -1,0 +1,174 @@
+/* 容器样式 */
+.photo-detail-container {
+    /* 最大宽度 */
+
+    /* 居中对齐 */
+    margin: auto;
+    /* 内边距 */
+    padding: 20px;
+    /* 字体族 */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    /* 添加以下属性实现垂直居中 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    /* 垂直居中 */
+}
+
+.photo-detail-back-arrow {
+    /* 绝对定位，脱离文档流 */
+    color: #8f8e8e;
+    /* position: absolute; */
+    height: auto;
+    left: 20px;
+    top: 200px;
+    /* 鼠标悬停时显示手型指针 */
+    cursor: pointer;
+    /* 内部填充：上下8像素，左右15像素 */
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 30px;
+    /* 稍微增大字体 */
+    transition: background-color 0.2s, transform 0.2s;
+    display: flex;
+    /* 确保内容居中 */
+    align-items: center;
+    justify-content: center;
+    min-width: 30px;
+    /* 确保有足够的宽度 */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    /* 添加轻微阴影增强可见性 */
+}
+
+/* 添加悬停效果 */
+.photo-detail-back-arrow:hover {
+    background-color: #e0e0e0;
+    transform: translateX(-3px);
+    /* 悬停时轻微左移，增强交互感 */
+}
+
+/* 内容样式 */
+.photo-detail-content {
+    /* 使用flex布局 */
+    display: flex;
+    /* 上边距 */
+    margin-top: 80px;
+    /* 垂直方向排列 */
+    flex-direction: column;
+    /* 子元素间距 */
+    gap: 24px;
+}
+
+/* 响应式布局 */
+@media (min-width: 768px) {
+    .photo-detail-content {
+        /* 水平方向排列 */
+        flex-direction: row;
+    }
+
+    .photo-detail-image {
+        /* 占3份空间 */
+        flex: 4;
+    }
+
+    .photo-detail-info {
+        /* 占2份空间 */
+        flex: 2;
+    }
+}
+
+/* 图片样式 */
+.photo-detail-image img {
+    /* 宽度100% */
+    width: 100%;
+    /* 最大高度 */
+    /* max-height: 600px; */
+    /* 保持比例 */
+    object-fit: contain;
+    /* 边框圆角 */
+    border-radius: 8px;
+    /* 阴影效果 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 信息区域样式 */
+.photo-detail-info {
+    /* 背景颜色 */
+    background-color: #f9f9f9;
+    /* 边框圆角 */
+    border-radius: 8px;
+    /* 内边距 */
+    padding: 20px;
+    /* 阴影效果 */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* 信息标题样式 */
+.photo-detail-info h3 {
+    /* 上边距 */
+    margin-top: 0;
+    /* 下边距 */
+    margin-bottom: 16px;
+    /* 字体大小 */
+    font-size: 20px;
+}
+
+/* 信息段落样式 */
+.photo-detail-info p {
+    /* 下边距 */
+    margin-bottom: 12px;
+    /* 行高 */
+    line-height: 1.5;
+}
+
+/* 标签区域样式 */
+.photo-detail-tags {
+    /* 上边距 */
+    margin-top: 20px;
+}
+
+/* 标签容器样式 */
+.photo-detail-tags-container {
+    /* 使用flex布局 */
+    display: flex;
+    /* 换行 */
+    flex-wrap: wrap;
+    /* 子元素间距 */
+    gap: 8px;
+    /* 上边距 */
+    margin-top: 8px;
+}
+
+/* 单个标签样式 */
+.photo-detail-photo-tag {
+    /* 内联块元素 */
+    display: inline-block;
+    /* 背景颜色 */
+    background-color: #e1f5fe;
+    /* 字体颜色 */
+    color: #0277bd;
+    /* 字体大小 */
+    font-size: 13px;
+    /* 内边距 */
+    padding: 4px 12px;
+    /* 边框圆角 */
+    border-radius: 16px;
+}
+
+/* 加载和错误状态样式 */
+.photo-detail-container:only-child {
+    /* 使用flex布局 */
+    display: flex;
+    /* 水平居中 */
+    justify-content: center;
+    /* 垂直居中 */
+    align-items: center;
+    /* 最小高度 */
+    min-height: 300px;
+    /* 字体大小 */
+    font-size: 16px;
+    /* 字体颜色 */
+    color: #666;
+}
