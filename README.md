@@ -4,6 +4,9 @@
 
 胶片摄影管理系统是一个全栈应用程序，专为展示和管理胶片摄影作品而设计。该系统由Go语言编写的后端API和React开发的前端页面组成，支持照片作品的展示、标签分类、详情查看等功能。
 
+<img width="1850" height="898" alt="99e1f2be-21a7-4a12-a1af-e194855d161a" src="https://github.com/user-attachments/assets/13a5aca4-bb8f-41ef-8527-116b978da9c8" />
+
+
 ## 功能特点
 
 ### 前端功能
